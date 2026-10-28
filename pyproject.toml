@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pie41spot-oplib_jd106"
+version = "0.1.0"
+description = "在同一个输入里两两比对，检测算子库维护工程师·多机通信的带宽瓶颈相关的矛盾表述，把冲突双方原样并排呈现"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "pie41spot" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://pie41spot.github.io"
+Repository = "https://github.com/pie41spot/oplib_jd106"
+Issues = "https://github.com/pie41spot/oplib_jd106/issues"
+
+[project.scripts]
+oplib_jd106 = "oplib_jd106:main"
+
+[tool.setuptools]
+py-modules = ["oplib_jd106"]
